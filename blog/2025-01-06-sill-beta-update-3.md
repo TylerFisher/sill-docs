@@ -13,7 +13,7 @@ It's 2025, and Sill is moving closer and closer to 1.0! This is the last major r
 
 Sill now has a separate documentation site and blog for updates and a full explanation of how to use the various features in Sill. You can check them out at [docs.sill.social](https://docs.sill.social), or by clicking the help link in the navigation pane on Sill. 
 
-Today, the documentation site houses end-user documentation for all of the current features in Sill, as well as this blog for updates about the service in the future. The end-user documentation explains everything from [how to create your account](/docs/setting-up-sill/signing-up-for-sill) and [connect your social networks](/docs/setting-up-sill/connecting-accounts) to how to [set up your Daily Digest](/docs/sill-plus/daily-digest) and [subscribe to lists](/docs/sill-plus/lists). It also goes in-depth on [how Sill calculates share counts](/docs/how-sill-works), [how various filters work](/docs/using-sill/links), and other longer explanations that I just couldn't fit into the main Sill UI.
+Today, the documentation site houses end-user documentation for all of the current features in Sill, as well as this blog for updates about the service in the future. The end-user documentation explains everything from [how to create your account](/setting-up-sill/signing-up-for-sill) and [connect your social networks](/setting-up-sill/connecting-accounts) to how to [set up your Daily Digest](/sill-plus/daily-digest) and [subscribe to lists](/sill-plus/lists). It also goes in-depth on [how Sill calculates share counts](/how-sill-works), [how various filters work](/using-sill/links), and other longer explanations that I just couldn't fit into the main Sill UI.
 
 Before I launch 1.0, the site will also house complete self-hosting documentation. This will take some time, as the [main repository](https://github.com/TylerFisher/sill) needs a good amount of code cleanup and testing before it is really feasible to be self-hosted. However, I'm committed to making this happen before I start charging any money for Sill, so I have good motivation to do the work.
 
@@ -30,7 +30,7 @@ When I started building Sill, one of the most exciting features I wanted to brin
 
 You can also combine these parameters for more granular filters, such as links from a particular domain that reach a certain share threshold.
 
-Read more about notifications in the [documentation](/docs/sill-plus/notifications).
+Read more about notifications in the [documentation](/sill-plus/notifications).
 
 ### Trending
 
@@ -40,7 +40,7 @@ Trending shows the ten most popular links on Sill over the past three hours. Pop
 
 Trending is available to anyone, even people without a Sill account. I think it's a great way to demonstrate some of Sill's utility, so share it with your friends!
 
-Learn more about Trending in the [documentation](/docs/using-sill/trending).
+Learn more about Trending in the [documentation](/using-sill/trending).
 
 ## Fixes
 
