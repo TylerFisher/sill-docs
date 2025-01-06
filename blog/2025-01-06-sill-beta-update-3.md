@@ -40,7 +40,7 @@ Trending shows the ten most popular links on Sill over the past three hours. Pop
 
 Trending is available to anyone, even people without a Sill account. I think it's a great way to demonstrate some of Sill's utility, so share it with your friends!
 
-Learn more about Trending in the [documentation](/using-sill/trending).
+Learn more about Trending in the [documentation]( /using-sill/trending).
 
 ## Fixes
 
