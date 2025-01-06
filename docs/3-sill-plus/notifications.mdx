@@ -1,0 +1,45 @@
+# Notifications
+
+*Note: While Sill is still in beta, all Sill+ features are free.*
+
+Notifications in Sill are a way for you to get alerts via email or RSS when links in your feed meet criteria that you define. You can have as many notification groups as you want, and can combine various parameters to make powerfully filtered views of your feed.
+
+## Setting up notifications
+
+To set up your notifications, go to [sill.social/notifications](https://sill.social/notifications). If this is your first time setting up notifications, you will see a few options for getting started.
+
+<div style={{
+  maxWidth: "500px",
+  margin: "0 auto"
+}}>
+<img src={require('./assets/notifications-start.png').default} style={{
+  width: "100%",
+  height: "auto"
+}} />
+</div>
+
+These notification templates are easy ways to get started with notifications. They can also serve as examples as to how notifications are constructed. Let's take the example of "Popular links from a domain" and walk through how it works.
+
+<div style={{
+  maxWidth: "500px",
+  margin: "0 auto"
+}}>
+<img src={require('./assets/popular-links.png').default} style={{
+  width: "100%",
+  height: "auto"
+}} />
+</div>
+
+Each notification template has three components: a name, a delivery format, and a set of filters. The name is just for you to remember what each notification template does. The delivery format works the same as the [Daily Digest](./daily-digest.mdx): you can receive notifications via email or via an RSS feed.
+
+Filters are where things get more interesting. In this example, we have two filters: one on the link URL and one on the number of shares. In combination, this template looks for links from a certain domain that reach a certain number of shares. Note that these filters are **additive**; a link must pass both filters.
+
+As you adjust your notification filters, Sill will tell you how many links from the past 24 hours match these filters, letting you fine-tune the frequency of notifications you can expect to receive.
+
+## Receiving notifications
+
+Each notification template allows you to choose the delivery format: email or RSS. 
+
+Emails will be sent to the email you registered for Sill with. When Sill checks for new notification items (usually, every 5-10 minutes), it will bundle together any new items and send you one email with the whole bundle of items. Each link will also show you the posts that shared this link directly in the email.
+
+If you choose RSS, you will receive an RSS URL at the top of the notification template after you save the notification template. You can copy and paste this URL into any RSS feed reader. When Sill checks for new notification items, it will send each new link as its own item in the RSS feed. The text in your feed reader will display the link description, as well as the posts that shared this link. If you follow the link in your RSS reader, it will go directly to the link URL rather than Sill itself. Thus, the RSS feeds work something like an automated linkblog.

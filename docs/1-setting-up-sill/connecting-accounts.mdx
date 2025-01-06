@@ -1,0 +1,36 @@
+---
+sidebar_position: 2
+---
+
+# Connect your social networks
+
+After you [sign up for Sill](./signing-up-for-sill.mdx), you'll have the option of connecting your Bluesky and/or Mastodon accounts. Both follow a similar process called OAuth that gives Sill scoped access to your accounts so that it can read your timelines and watch for new links.
+
+<div style={{
+  maxWidth: "500px",
+  margin: "0 auto"
+}}>
+<img src={require('./assets/connect.png').default} style={{
+  width: "100%",
+  height: "auto"
+}} />
+</div>
+
+## Bluesky
+
+To connect to Bluesky, enter your handle into the form. If you use the standard `.bsky.social` handle, then enter your full handle, which is formatted like `<username>.bsky.social`. If you use a custom domain, enter your custom domain.
+
+You will then be redirected to a Bluesky login screen. Here, use your normal account password. **Do not use an app password.** Sill will not have access to your password at all. Bluesky's OAuth process returns a scoped, time-bound authentication token instead. This is a more secure process than app passwords, which you can read about [here](https://docs.bsky.app/blog/oauth-atproto).
+
+After you enter your password, you will be asked to grant Sill access to your account so that it can read your timeline. Click accept, and Sill will download the last 24 hours of your Bluesky timeline. Once this process finishes, you will be able to take a few [next steps](#next-steps).
+
+## Mastodon
+
+To connect to Mastodon, enter your full account handle, which is formatted like `@<username>@<instance>`. You will then be redirected to your Mastodon instance to sign into your account and grant Sill permissions.
+
+After you accept, Sill will donwload the last 24 hours of your Mastodon timeline. Once this process finishes, you will be able to take a few [next steps](#next-steps).
+
+## Next steps
+
+- [Lists](../paid/lists.mdx)
+- [Daily Digest](../paid/daily-digest.mdx)

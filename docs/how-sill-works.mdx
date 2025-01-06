@@ -1,0 +1,33 @@
+---
+description: A description of how Sill works
+sidebar_position: 2
+---
+
+# How Sill works
+
+Sill connects to your Bluesky and Mastodon accounts and watches your timelines for links that people post. It then aggregates the links by looking for the most commonly posted links in a 24-hour time period.
+
+## How Sill counts shares
+
+The core function Sill serves is link aggregation: it counts the number of people in your social networks who shared the same link. Counting shares seems simple, but Sill makes a couple key decisions to get the best signal possible out of your networks.
+
+### Sill counts unique accounts that share a link
+
+Rather than counting the raw number of posts linking to a particular URL, Sill counts the *unique accounts* that post a particular URL. Some accounts you follow may post the same link many times. Counting unique actors protects against one account spamming your feed.
+
+### Posts, reposts and quote posts all count the same
+
+Some link aggregation applications use different weights for posts, reposts and quote posts. Sill does not. Each type of post counts as one share.
+
+## Sill watches your social accounts in the background to stay up-to-date
+
+After you [connect your social accounts](./1-setting-up-sill/connecting-accounts.mdx), Sill will continually watch your timeline for new links. Whenever you visit Sill again, it will have the latest links for you. This background process also allows you to get the [Daily Digest](./3-sill-plus/daily-digest.mdx) and [custom notifications](./3-sill-plus/notifications.mdx), so Sill can meet you where you are.
+
+## Sill keeps your social accounts secure
+
+For both Bluesky and Mastodon, Sill uses an authentication process called [OAuth](https://oauth.net/2/), which is commonly used for third-party account authorization across the web. When you enter your handle on Sill, you are redirected to either Bluesky or Mastodon to log in with your handle and password. Importantly, **this does not give Sill access to your password**. Once you have authenticated with your social network, the network gives Sill a scoped token so that Sill can read your timeline and look for new links.
+
+Bluesky users may be familiar with the app password system for logging into third-party services. Sill does not use app passwords, [following guidance from the Bluesky team to adopt their new OAuth authorization standard](https://docs.bsky.app/blog/oauth-atproto). OAuth is a more secure authorization system than app passwords, and is expected to be the primary way to give third-party applications access to your Bluesky account.
+
+
+
