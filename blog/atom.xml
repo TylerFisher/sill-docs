@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs.sill.social/blog/</id>
+    <title>Sill Blog</title>
+    <updated>2025-01-06T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs.sill.social/blog/"/>
+    <subtitle>Sill Blog</subtitle>
+    <icon>https://docs.sill.social/img/favicon-32x32.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Sill Beta Update #3: Notifications, Trending, Docs]]></title>
+        <id>https://docs.sill.social/blog/sill-beta-update-3/</id>
+        <link href="https://docs.sill.social/blog/sill-beta-update-3/"/>
+        <updated>2025-01-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It's 2025, and Sill is moving closer and closer to 1.0! This is the last major release before 1.0. I'm excited to release a slew of new features today: custom notifications, trending, and an official documentation site!]]></summary>
+        <content type="html"><![CDATA[<p>It's 2025, and Sill is moving closer and closer to 1.0! This is the last major release before 1.0. I'm excited to release a slew of new features today: custom notifications, trending, and an official documentation site!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New features<a href="https://docs.sill.social/blog/sill-beta-update-3/#new-features" class="hash-link" aria-label="Direct link to New features" title="Direct link to New features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="new-documentation-site-and-blog">New documentation site and blog<a href="https://docs.sill.social/blog/sill-beta-update-3/#new-documentation-site-and-blog" class="hash-link" aria-label="Direct link to New documentation site and blog" title="Direct link to New documentation site and blog">​</a></h3>
+<p>Sill now has a separate documentation site and blog for updates and a full explanation of how to use the various features in Sill. You can check them out at <a href="https://docs.sill.social/" target="_blank" rel="noopener noreferrer">docs.sill.social</a>, or by clicking the help link in the navigation pane on Sill.</p>
+<p>Today, the documentation site houses end-user documentation for all of the current features in Sill, as well as this blog for updates about the service in the future. The end-user documentation explains everything from <a href="https://docs.sill.social/setting-up-sill/signing-up-for-sill/">how to create your account</a> and <a href="https://docs.sill.social/setting-up-sill/connecting-accounts/">connect your social networks</a> to how to <a href="https://docs.sill.social/sill-plus/daily-digest/">set up your Daily Digest</a> and <a href="https://docs.sill.social/sill-plus/lists/">subscribe to lists</a>. It also goes in-depth on <a href="https://docs.sill.social/how-sill-works/">how Sill calculates share counts</a>, <a href="https://docs.sill.social/using-sill/links/">how various filters work</a>, and other longer explanations that I just couldn't fit into the main Sill UI.</p>
+<p>Before I launch 1.0, the site will also house complete self-hosting documentation. This will take some time, as the <a href="https://github.com/TylerFisher/sill" target="_blank" rel="noopener noreferrer">main repository</a> needs a good amount of code cleanup and testing before it is really feasible to be self-hosted. However, I'm committed to making this happen before I start charging any money for Sill, so I have good motivation to do the work.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="custom-notifications">Custom notifications<a href="https://docs.sill.social/blog/sill-beta-update-3/#custom-notifications" class="hash-link" aria-label="Direct link to Custom notifications" title="Direct link to Custom notifications">​</a></h3>
+<p>When I started building Sill, one of the most exciting features I wanted to bring was a custom alert system. Today, I'm launching the first version of that in <a href="https://sill.social/notifications" target="_blank" rel="noopener noreferrer">notifications</a>. With notifications, you can get alerted via email or RSS feed whenever Sill sees anything that catches a parameter that you define. You can create notifications based on the following parameters:</p>
+<ul>
+<li>Share counts (e.g. alert me about links after 5 or more people share them)</li>
+<li>Keyword search on link titles and descriptions</li>
+<li>Matching on link URLs (e.g. show me all links from nytimes.com)</li>
+<li>Keyword search on post text</li>
+<li>Matching on post/repost authors</li>
+<li>Service (Bluesky or Mastodon)</li>
+</ul>
+<p>You can also combine these parameters for more granular filters, such as links from a particular domain that reach a certain share threshold.</p>
+<p>Read more about notifications in the <a href="https://docs.sill.social/sill-plus/notifications/">documentation</a>.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="trending">Trending<a href="https://docs.sill.social/blog/sill-beta-update-3/#trending" class="hash-link" aria-label="Direct link to Trending" title="Direct link to Trending">​</a></h3>
+<p>As Sill reaches critical mass, there is opportunity to leverage the data Sill collects to learn interesting things about Bluesky and Mastodon at scale. My first attempt at this is Sill's new publicly available <a href="https://sill.social/links/trending" target="_blank" rel="noopener noreferrer">Trending</a> page.</p>
+<p>Trending shows the ten most popular links on Sill over the past three hours. Popularity is determined just like your individual Sill feed: by the number of unique accounts that share a particular link. The trending feed also shows the most popular post for a given link. This is calculated on something like an impressions model: how many timelines did this post appear in?</p>
+<p>Trending is available to anyone, even people without a Sill account. I think it's a great way to demonstrate some of Sill's utility, so share it with your friends!</p>
+<p>Learn more about Trending in the <a href="https://docs.sill.social/using-sill/trending/">documentation</a>.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixes">Fixes<a href="https://docs.sill.social/blog/sill-beta-update-3/#fixes" class="hash-link" aria-label="Direct link to Fixes" title="Direct link to Fixes">​</a></h2>
+<p>In addition to these new features, I've made a lot of improvements to the service since the last beta update. These include:</p>
+<ul>
+<li><strong>Improved URL matching</strong>: Sill now does a much better job of removing unnecessary query parameters and expanding URLs from link shorteners. This is a never-ending game of whack-a-mole, but in my testing, Sill is doing a much better job over the past few weeks. I will continue to improve this as I find more query parameters/link shorteners to detect. Let me know if you see duplicates that I can address!</li>
+<li><strong>Improved duplicate actor detection</strong>: For people who follow the same people on both Bluesky and Mastodon, it could be frustrating to see the same post from the same person count as two shares. Now, if people use the same name or similar handles on Bluesky and Mastodon, Sill will count them as one person. If you still see duplicates, send me the duplicate case and I'll see what extra cases I can add to account for it.</li>
+<li><strong>Gift link detection</strong>: Sill will find gift links for articles in your feed and display them for you with the gift icon in the toolbar. (In the Daily Digest and notifications, the gift link can be found next to the domain name).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-road-to-10">The road to 1.0<a href="https://docs.sill.social/blog/sill-beta-update-3/#the-road-to-10" class="hash-link" aria-label="Direct link to The road to 1.0" title="Direct link to The road to 1.0">​</a></h2>
+<p>This is the last major update to Sill before 1.0.  Given that, I will use this space to talk about how pricing will work for Sill once 1.0 is launched. After feedback from some early beta testers, I've decided to keep Sill's pricing simple.</p>
+<p><strong>There will always be a free version of Sill.</strong> The free version will allow you to connect both a Bluesky and a Mastodon account to Sill and use the web client to see your links. You will also have access to the muting features and any future moderation features I develop, as these are user safety features that everyone should have access to. The free version will not limit how often you use Sill or how much data Sill pulls in for you.</p>
+<p><strong>The paid tier, called Sill+, will be $5/month or $50/year.</strong><sup>*</sup> This will get you access to everything else in Sill: Daily Digests, lists, custom notifications, and other paid features I develop in the future. Sill+ will offer a 14-day free trial, and as beta testers, you'll be given that free trial automatically when Sill+ launches. I will let you know when this is happening so you have plenty of time to decide whether you want to pay for Sill+ or not.</p>
+<p><strong>The open source version will have all features available.</strong> If you choose to self-host Sill, you'll have access to everything Sill offers for whatever your self-hosting costs. However, I expect that most self-hosting setups would cost more money than just paying for a Sill+ subscription, given the database size that Sill accumulates over time.</p>
+<p>I'm choosing this revenue model because I want to keep Sill sustainable for the long run. That means funding both the infrastructure to run Sill and the time I dedicate to it. Based on the number of users Sill has today, I'm hopeful that this simple pricing structure can generate enough revenue for Sill to succeed.</p>
+<small><em><sup>*</sup> I'm still working out how pricing will work in different currencies, but it will be something similar.</em></small>]]></content>
+        <author>
+            <name>Tyler Fisher</name>
+            <uri>https://tylerjfisher.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sill Beta Update #2: RSS, Dense Layout, and more]]></title>
+        <id>https://docs.sill.social/blog/sill-beta-update-2/</id>
+        <link href="https://docs.sill.social/blog/sill-beta-update-2/"/>
+        <updated>2024-12-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It’s been another great week! Another 500+ users have signed up since the last beta update, and Sill is well on its way to a 1.0 release in the new year.]]></summary>
+        <content type="html"><![CDATA[<p>It’s been another great week! Another 500+ users have signed up since the last beta update, and <a href="https://sill.social/" target="_blank" rel="noopener noreferrer">Sill</a> is well on its way to a 1.0 release in the new year.</p>
+<p>Today, I’m releasing a set of much-requested features that I’m really excited about, including RSS feeds, a dense layout option, and some navigation redesign. Let’s dig in!</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New Features<a href="https://docs.sill.social/blog/sill-beta-update-2/#new-features" class="hash-link" aria-label="Direct link to New Features" title="Direct link to New Features">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="daily-digest-updates-rss-better-permalinks-and-more">Daily Digest updates: RSS, better permalinks, and more<a href="https://docs.sill.social/blog/sill-beta-update-2/#daily-digest-updates-rss-better-permalinks-and-more" class="hash-link" aria-label="Direct link to Daily Digest updates: RSS, better permalinks, and more" title="Direct link to Daily Digest updates: RSS, better permalinks, and more">​</a></h3>
+<p><em>Daily Digests will be a paid feature after Sill’s beta period ends.</em></p>
+<p>Daily Digests — what I’m now calling the daily update you can get from Sill with your most popular links — are now accessible via RSS. To enable this, head to your <a href="https://sill.social/email" target="_blank" rel="noopener noreferrer">Daily Digest settings</a> and change your Daily Digest delivery format to RSS. If you’re setting up your digest for the first time, make sure you select a delivery time as well. After you save, you’ll see an RSS feed link that you can copy and bring to the RSS reader of your choice.</p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733932549/Screenshot_2024-12-10_at_10.27.31_PM_wa1q3h.png" alt="A two-panel screenshot of the Daily Digest settings page, with one panel pointing to the delivery format radio button group and the save button and another panel pointing to the RSS URL copy button." class="img_ev3q"></p>
+<p>The RSS feed itself is a full-text feed. Here’s what it looks like for me in Reeder (the best RSS reader, if you’re on macOS or iOS).</p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733932604/Screenshot_2024-12-09_at_11.53.11_PM_lh3jae.png" alt="A screenshot of the Sill Daily Digest in Reeder" class="img_ev3q"></p>
+<p>RSS readers all handle images that are directly in RSS feeds a little differently, so I’m choosing not to show them in the full-text feed. However, every digest you get is linked to a new permalink route that sends you to a fully functional Sill web client for your day’s digest. This permalink route is also linked to throughout the email, if you continue to get your Daily Digest through email.</p>
+<p>Speaking of the email, I made some significant design fixes. Most importantly, I fixed the image handling. My CSS for restricting the aspect ratio of the link images was not working in most email clients, so I committed some CSS crimes in order to get it to work properly. You should see fewer enormous images in your email now. I also narrowed the width of the whole digest so those images take up even less vertical space.</p>
+<p>But what if you just don’t want to see any images, ever? Well, I have good news for you.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="a-new-dense-layout-option">A new “dense layout” option<a href="https://docs.sill.social/blog/sill-beta-update-2/#a-new-dense-layout-option" class="hash-link" aria-label="Direct link to A new “dense layout” option" title="Direct link to A new “dense layout” option">​</a></h3>
+<p>Many people had asked for more information density in their Sill feeds. To solve this, I’m introducing the “dense layout” option for both the email and the web client. The dense layout removes images from links and tightens the spacing between links. In my testing, this gets roughly twice as much content on your screen at once.</p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733932654/Screenshot_2024-12-10_at_10.35.17_PM_amq4wb.png" alt="A two-panel screenshot showing the difference between the default layout and the dense layout. The default layout shows the images for each story, while the dense layout does not. The dense layout also has tighter spacing between the stories." class="img_ev3q"></p>
+<p>In the web client, you’ll find the switch in the footer. On desktop, that’s on the bottom left of your screen. On mobile, you’ll need to open the hamburger menu (yes, that’s new too, see below!) in the top left, and then you’ll find it at the bottom of the menu.</p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733932750/Screenshot_2024-12-10_at_10.41.24_PM_man9hd.png" alt="A screenshot of the desktop Sill UI, pointing to the layout switch in the lower left." class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733932714/Screenshot_2024-12-10_at_10.47.23_PM_tceo4s.png" alt="A two-panel screenshot showing where to find the Layout switch on mobile. The first panel points to the hamburger menu button in the top left. The second panel points to the layout switch in the menu at the bottom." class="img_ev3q"></p>
+<p>On the web, the layout switch works on a <em>per-browser</em> basis, meaning you can, for example, use the default layout on desktop where you have more space but use the dense layout on mobile.</p>
+<p>You can also enable the dense layout in your Daily Digest email. To do so, head to your <a href="https://sill.social/email" target="_blank" rel="noopener noreferrer">Daily Digest settings</a>, select “Dense” in the layout section of the form, and click Save. Your next email should hide the images and present a denser layout.</p>
+<p>Note that there is no layout configuration for the RSS feeds, since I don’t put images in the full text feed anyway. However, if you follow the link to the permalink route, the browser you open with will respect your layout preference on the permalink route.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="redesigned-navigation-and-filters">Redesigned navigation and filters<a href="https://docs.sill.social/blog/sill-beta-update-2/#redesigned-navigation-and-filters" class="hash-link" aria-label="Direct link to Redesigned navigation and filters" title="Direct link to Redesigned navigation and filters">​</a></h3>
+<p>In the process of finding a place for the new layout switch, I ended up redesigning the whole navigation and filter UI. On mobile, I’ve removed the bottom bar navigation and moved all of the page-level navigation into a traditional hamburger menu. To expand it, tap the icon in the top left. You’ll find all the configuration pages, as well as the theme switcher and layout switcher, in the hamburger menu. To close the menu, tap anywhere outside the menu.</p>
+<p>Taking the nav’s place in the bottom bar is a new filters drawer. Tap the filters button at the bottom of your screen to expand the filters. The filters function the same as before, but are now cleaner-looking dropdown menus rather than the bulky card-buttons from before.</p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733932941/Screenshot_2024-12-10_at_11.04.39_PM_s8yruc.png" alt="A two-panel screenshot of the mobile Sill UI, pointing to the filters button at the bottom in the first panel, and showing the expanded filters drawer in the second." class="img_ev3q"></p>
+<p>On desktop, I’ve used the newfound space in the right rail to keep the search bar and filters omnipresent.</p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733932978/Screenshot_2024-12-10_at_11.05.50_PM_myaxf3.png" alt="A screenshot of the desktop Sill UI with the new, omnipresent filters UI in the right rail." class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixes-and-tweaks">Fixes and tweaks<a href="https://docs.sill.social/blog/sill-beta-update-2/#fixes-and-tweaks" class="hash-link" aria-label="Direct link to Fixes and tweaks" title="Direct link to Fixes and tweaks">​</a></h2>
+<p>Technically, I released all these fixes already, but it’s worth noting these for posterity.</p>
+<ul>
+<li>Rewritten database schema: My initial pass at the database schema simply didn’t scale. I rewrote it (for the nerds: I denormalized) and immediately saw significant performance improvements across the board. I’m hoping this scales well into the future. This did cause <a href="https://github.com/TylerFisher/sill/issues/29" target="_blank" rel="noopener noreferrer">an issue with expanding posts</a> later in the week that I’ve since addressed. If you’re still having trouble with that, try refreshing your cache.</li>
+<li>Removed Redis: It was causing more problems than it solved. If I have to do any job queueing again, I’ll just use Postgres for it.</li>
+<li>Improved link matching algorithm. I’m now removing the most common query parameters that have no effect on functionality, like UTM parameters. This still isn’t a perfect solution, but it helps. Also, this is not a retroactive fix, so it will take 24 hours before the full effects are seen in Sill.</li>
+<li>Properly handle newlines in Bluesky posts</li>
+<li>Display favicons next to the URL for easier scanning</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-road-to-10">The road to 1.0<a href="https://docs.sill.social/blog/sill-beta-update-2/#the-road-to-10" class="hash-link" aria-label="Direct link to The road to 1.0" title="Direct link to The road to 1.0">​</a></h2>
+<p>Next, I’m going to work on the notification system. Here’s what I’m thinking:</p>
+<ul>
+<li>Users will be able to configure notifications across several different dimensions: number of shares, source URL, keywords in the link and/or posts, specific accounts sharing, and more. Users can have as many notification types as they like and combine dimensions as they please.</li>
+<li>You will be able to get notifications via email or via RSS, just like the Daily Digest. I will have to put some maximum limit on the emails though, so someone doesn’t accidentally get 10,000 emails sent to them in a day or something.</li>
+<li>Notifications won’t be exactly real-time, but I’m going to speed up the account update process as much as I can so notifications go out in a timely manner. Hopefully I’ll be checking every 15 minutes or so, but we’ll see how it goes.</li>
+</ul>
+<p>As always, thanks for reading and thanks for trying Sill. I’m always open to feedback about anything here or anything else. Email me at <a href="mailto:tyler@sill.social" target="_blank" rel="noopener noreferrer">tyler@sill.social</a>.</p>]]></content>
+        <author>
+            <name>Tyler Fisher</name>
+            <uri>https://tylerjfisher.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sill Beta Update #1: Lists, Permalinks, more]]></title>
+        <id>https://docs.sill.social/blog/sill-beta-update-1/</id>
+        <link href="https://docs.sill.social/blog/sill-beta-update-1/"/>
+        <updated>2024-12-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[It's been an incredible week since Sill launched in public beta. Sill has nearly 4,000 users now, and Sill has been mentioned in Nieman Lab, The Verge, TechCrunch, Waxy.org, The Changelog, Lifehacker and a lot more, especially natively on Bluesky and Mastodon. Thank you all for giving Sill a try and telling your friends!]]></summary>
+        <content type="html"><![CDATA[<p>It's been an incredible week since Sill launched in public beta. Sill has nearly 4,000 users now, and Sill has been mentioned in <a href="https://www.niemanlab.org/2024/11/remember-nuzzel-a-similar-news-aggregating-tool-now-exists-for-bluesky/" target="_blank" rel="noopener noreferrer">Nieman Lab</a>, <a href="https://www.theverge.com/2024/11/24/24303359/surveilled-buy-now-documentaries-tech-dune-installer" target="_blank" rel="noopener noreferrer">The Verge</a>, <a href="https://techcrunch.com/2024/11/25/sills-new-app-rounds-up-the-best-links-from-your-bluesky-and-mastodon-network/" target="_blank" rel="noopener noreferrer">TechCrunch</a>, <a href="https://waxy.org/2024/11/sill-find-trending-links-from-your-bluesky-and-mastodon-network/" target="_blank" rel="noopener noreferrer">Waxy.org</a>, <a href="https://changelog.com/news/122" target="_blank" rel="noopener noreferrer">The Changelog</a>, <a href="https://lifehacker.com/tech/sill-app-links-in-bluesky-mastodon-feeds" target="_blank" rel="noopener noreferrer">Lifehacker</a> and a lot more, especially natively on Bluesky and Mastodon. Thank you all for giving Sill a try and telling your friends!</p>
+<p>Today, Sill is <a href="https://www.producthunt.com/posts/sill" target="_blank" rel="noopener noreferrer">live on Product Hunt</a>! If you're a Product Hunt user, I'd love your support over there.</p>
+<p>To kick off this week, I'm excited to announce some much-requested features are launching as the next phase of the beta process, including lists, permalinks for individual links, some redesigned navigation, and more.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New features<a href="https://docs.sill.social/blog/sill-beta-update-1/#new-features" class="hash-link" aria-label="Direct link to New features" title="Direct link to New features">​</a></h2>
+<p>Today I'm launching a set of new features that are among the most requested in the time since I've launched.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="lists">Lists<a href="https://docs.sill.social/blog/sill-beta-update-1/#lists" class="hash-link" aria-label="Direct link to Lists" title="Direct link to Lists">​</a></h3>
+<p><em>The list feature will be a paid feature after Sill's beta period ends.</em></p>
+<p>One of the most powerful features of both Bluesky and Mastodon is the ability to create custom lists and feeds. Sill can now collect links from any of your lists or feeds on Bluesky or Mastodon. To enable this, head to the connect screen and turn on the lists you're interested in. You will see all of the lists you have either created or subscribed to under each account you've connected in Sill.</p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733116769/Screenshot_2024-12-01_at_10.01.23_PM_towgem.png" alt="A screenshot of the lists UI in Sill" class="img_ev3q"></p>
+<p>When you enable a list in Sill, Sill will fetch links from the last 24 hours in that list immediately and continue to fetch links from that list going forward. Those links will be aggregated as part of your main feed in Sill and will go into your daily email if you have enabled the email. In the web client, you can also filter down to see just the links from an individual list.</p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733116796/Screenshot_2024-12-01_at_10.09.09_PM_isfmhi.png" alt="A screenshot of the filters UI in Sill with an arrow pointing to the new lists dropdown" class="img_ev3q"></p>
+<p>For Bluesky users, note that Sill's link collection works best with chronological feeds. Sill will stop fetching when it encounters a post more than 24 hours old. With algorithmic feeds like Discover, that can happen pretty quickly, so Sill might not pick up very many links.</p>
+<p>On Mastodon, lists work differently. You can only add people you already follow to lists, so really, this is just another way of filtering your Sill feed down.</p>
+<p>As always, give me your feedback on this feature. Does it meet your expectations? What else would you want from lists?</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="permalinks">Permalinks<a href="https://docs.sill.social/blog/sill-beta-update-1/#permalinks" class="hash-link" aria-label="Direct link to Permalinks" title="Direct link to Permalinks">​</a></h3>
+<p>Permalinks are accessible from the daily email, which will be a paid feature after Sill's beta period ends.</p>
+<p>A key frustration in the initial Sill launch was the inability to see anything about the individual posts discussing a link in the daily email. I have solved this with permalinks. Starting after this launch, in the daily email you will be able to click on the "Shared by <code>&lt;n&gt;</code> accounts" language below each link.</p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733116839/Screenshot_2024-12-01_at_10.19.22_PM_iad8uw.png" alt="A screenshot of a link in a Sill email with language below that says &quot;Shared by 3 accounts&quot; that links to a permalink page" class="img_ev3q"></p>
+<p>Doing so will open a permalink route in the Sill web client where you can see all of the posts about a particular links.</p>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733116886/Screenshot_2024-12-01_at_10.17.26_PM_rnppqh.png" alt="A screenshot of the permalink page, showing a link card and the three posts about the link" class="img_ev3q"></p>
+<p>Note that these permalinks are not shareable. They require being logged into Sill, and will only show you posts from accounts you follow.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="customizable-email-options">Customizable email options<a href="https://docs.sill.social/blog/sill-beta-update-1/#customizable-email-options" class="hash-link" aria-label="Direct link to Customizable email options" title="Direct link to Customizable email options">​</a></h3>
+<p>The daily email will be a paid feature after Sill's beta period ends.</p>
+<p>I've added a couple additional options for the daily email:</p>
+<ul>
+<li>You can now customize the amount of links you receive in an email. You can get anywhere from 1-20.</li>
+<li>You can hide reposts from counting in the email's calculation of your top links.</li>
+</ul>
+<p><img decoding="async" loading="lazy" src="https://res.cloudinary.com/tylrfishr/image/upload/f_auto,q_auto/c_fill,w_1200/v1733116877/Screenshot_2024-12-01_at_10.22.23_PM_ow58fd.png" alt="A screenshot of the new email settings page, which allows you to hide reposts via a checkbox and use a slider to set the number of links you receive per email." class="img_ev3q"></p>
+<p>To customize these options, visit the new(!) email settings page. What else would you like to customize in your email?</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="fixes-and-tweaks">Fixes and tweaks<a href="https://docs.sill.social/blog/sill-beta-update-1/#fixes-and-tweaks" class="hash-link" aria-label="Direct link to Fixes and tweaks" title="Direct link to Fixes and tweaks">​</a></h2>
+<ul>
+<li>Redesigned navigation: You may have noticed in the screenshots above that I tweaked the navigation. The email settings now have their own page, and I've renamed "Home" to "Links" so it is clearer where to find that functionality.</li>
+<li>No more gifs: I am now filtering out any link that ends in .gif by default.</li>
+<li>Better link matching: I wasn't converting all links to lowercase before matching them. That's fixed now, so if someone capitalizes a letter in a link, it shouldn't matter.</li>
+</ul>]]></content>
+        <author>
+            <name>Tyler Fisher</name>
+            <uri>https://tylerjfisher.com</uri>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introducing Sill]]></title>
+        <id>https://docs.sill.social/blog/introducing-sill/</id>
+        <link href="https://docs.sill.social/blog/introducing-sill/"/>
+        <updated>2024-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Today I’m excited to launch the public beta of Sill, my new social media tool. Sill connects to your Bluesky and Mastodon accounts and aggregates the most popular links in your network. (Yes, a little like Nuzzel.)]]></summary>
+        <content type="html"><![CDATA[<p>Today I’m excited to launch the public beta of <a href="https://sill.social/" target="_blank" rel="noopener noreferrer">Sill</a>, my new social media tool. Sill connects to your Bluesky and Mastodon accounts and aggregates the most popular links in your network. (Yes, a little like <a href="https://daringfireball.net/linked/2021/05/05/nuzzel" target="_blank" rel="noopener noreferrer">Nuzzel</a>.)</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sill-today">Sill Today<a href="https://docs.sill.social/blog/introducing-sill/#sill-today" class="hash-link" aria-label="Direct link to Sill Today" title="Direct link to Sill Today">​</a></h2>
+<p>Today, Sill has a small but powerful feature set. Sill can:</p>
+<ul>
+<li>Connect to your Bluesky and Mastodon accounts and watch your home timeline for new links.</li>
+<li>Aggregate the links to show you the most popular links in your network and what people said about those links.</li>
+<li>Send you a daily email with your most popular links.</li>
+<li>Allow you to curate your links by muting phrases, domains, and accounts you don’t want to see.</li>
+</ul>
+<p>This will remain the core feature set of Sill going forward. It also provides a strong foundation to build a powerful link-forward platform in the future. If this excites you, sign up for Sill now at <a href="https://sill.social/" target="_blank" rel="noopener noreferrer">sill.social</a>.</p>
+<p>Sill is an <a href="https://github.com/TylerFisher/sill/" target="_blank" rel="noopener noreferrer">open source project</a>, and I’m committed to keeping it that way. Theoretically, you can self-host Sill anywhere you can run a Docker container, though at scale, the infrastructure costs are considerable and I haven’t written nearly enough documentation. However, if you have some technical know-how and want to run Sill for yourself or a couple folks, it should work on small-ish machines.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="sill-in-the-future">Sill in the future<a href="https://docs.sill.social/blog/introducing-sill/#sill-in-the-future" class="hash-link" aria-label="Direct link to Sill in the future" title="Direct link to Sill in the future">​</a></h2>
+<p>I built Sill as a passion project, but I'd also like to keep it sustainable, which means making plans for revenue. While I am committed to always keeping the basic Sill web client free, once we exit the public beta period (likely early next year), I plan to launch some paid plans for Sill with additional features. These may include:</p>
+<ul>
+<li>Connecting multiple accounts from the same network</li>
+<li>Pulling in custom lists and feeds from your Mastodon/Bluesky accounts</li>
+<li>A customized email alert system where you can get notified when a link meets certain requirements that you define. Think of this as a Google Alert system built into Sill.</li>
+<li>Native apps (this is a very big maybe, I don't know if I have the capacity to support this)</li>
+<li>Account analytics. I'd love to show you the most popular news sources, most commonly reposted accounts, and other insights I can gain by analyzing the links your networks posts.</li>
+</ul>
+<p>In addition to all of this, I may have a cheaper paid plan for the daily emails. Bulk email is expensive, so I may need to recoup my costs on that going forward.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="why-sill">Why Sill?<a href="https://docs.sill.social/blog/introducing-sill/#why-sill" class="hash-link" aria-label="Direct link to Why Sill?" title="Direct link to Why Sill?">​</a></h2>
+<p>As decentralized social media continues to grow, I believe it is important to build a strong ecosystem of third party tools that support these networks and embellish their functionality. Sill adds an important piece of that puzzle, a way to get the biggest stories from your networks <em>without</em> remaining glued to your feeds. Above all, Sill promotes a healthier way to use social media.</p>
+<p>Philosophically, Sill prioritizes the link, a fundamental building block of the web that our overlord platforms have completely lost sight of. On Instagram, TikTok, YouTube, X, Facebook, and almost every other big social media platform, the link is deprioritized in favor of keeping your eyes on the platform at all costs. This has had disastrous consequences for journalism, art, and the fundamental connective nature of the web.</p>
+<p>The link is what makes the web unlike any communication technology ever devised. A link opens a portal to another world. A link demonstrates trust. It's proof. A citation. In a world on the edge of post-reality, links are the way back.</p>
+<p>So Sill is all about the link. It inverts the traditional social media paradigm of post over link to something that feels, to me, more natural. Posts about links are basically comments. We should read the link, then the comments.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-technical-details">The technical details<a href="https://docs.sill.social/blog/introducing-sill/#the-technical-details" class="hash-link" aria-label="Direct link to The technical details" title="Direct link to The technical details">​</a></h2>
+<p>Sill is built with <a href="https://remix.run/" target="_blank" rel="noopener noreferrer">Remix</a>, <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">Postgres</a>, and <a href="https://redis.io/" target="_blank" rel="noopener noreferrer">Redis</a>. I host the whole thing on a big server on <a href="https://www.latitude.sh/" target="_blank" rel="noopener noreferrer">Latitude</a>. I was pretty inspired by Hadi Javeed’s <a href="https://www.hadijaveed.me/2024/09/08/does-your-startup-really-need-complex-cloud-infrastructure/" target="_blank" rel="noopener noreferrer">Docker Compose Anywhere project</a> that gets you a really powerful single-server setup and gets you off the ground quickly. I’m a solo developer on this project, so every technical decision I made was in the name of technical simplicity.</p>
+<p>Again, if you're interested in diving deeper, <a href="https://github.com/TylerFisher/sill/" target="_blank" rel="noopener noreferrer">Sill is open source</a>. You can self-host if you want, though you might have to do some digging in the code before I write full self-hosting documentation. The good news is it should run anywhere you can run a Docker container, so your deployment options are numerous. If you're planning to only use it for yourself, you won't need nearly as large of a server as I'm running.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="some-known-issues">Some known issues<a href="https://docs.sill.social/blog/introducing-sill/#some-known-issues" class="hash-link" aria-label="Direct link to Some known issues" title="Direct link to Some known issues">​</a></h2>
+<p>This is a beta, after all, so Sill is far from perfect. Here are some things I know about and will be working on:</p>
+<ul>
+<li>The link matching isn’t perfect. If people post with different query parameters, those get logged as different links. I’ve tried a few solutions to this, but none of them were perfect.</li>
+<li>Sometimes Sill fails to pull the title, description, and image for an article. My fetcher gets blocked sometimes. I have some work to do to optimize this process.</li>
+<li>If you follow people on both Mastodon and Bluesky, they get counted as two different accounts rather than the same person. This is a tricky problem to solve, but I have some ideas I’d like to try when I have the time.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="give-sill-a-try">Give Sill a try<a href="https://docs.sill.social/blog/introducing-sill/#give-sill-a-try" class="hash-link" aria-label="Direct link to Give Sill a try" title="Direct link to Give Sill a try">​</a></h2>
+<p>I built Sill because I value the people in my social network, and I believe I can learn the most about the world by reading what they read and hearing what they have to say. Sill listens to them at scale and helps me understand the conversation. In the month or so I’ve been using it myself, Sill has completely changed my relationship to my social network.</p>
+<p>If you’d like to better understand your network and the world around you, <a href="https://sill.social/" target="_blank" rel="noopener noreferrer">sign up for Sill</a>. If you have feedback, you can find me on <a href="https://bsky.app/profile/tylerjfisher.com" target="_blank" rel="noopener noreferrer">Bluesky</a>, <a href="https://social.tylerjfisher.com/@tylrfishr" target="_blank" rel="noopener noreferrer">Mastodon</a> or <a href="mailto:tyler@sill.social" target="_blank" rel="noopener noreferrer">email</a>.</p>]]></content>
+        <author>
+            <name>Tyler Fisher</name>
+            <uri>https://tylerjfisher.com</uri>
+        </author>
+    </entry>
+</feed>
