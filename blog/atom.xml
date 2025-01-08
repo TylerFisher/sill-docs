@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.sill.social/blog/</id>
     <title>Sill Blog</title>
-    <updated>2025-01-06T00:00:00.000Z</updated>
+    <updated>2025-01-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.sill.social/blog/"/>
     <subtitle>Sill Blog</subtitle>
@@ -11,7 +11,7 @@
         <title type="html"><![CDATA[Sill Beta Update #3: Notifications, Trending, Docs]]></title>
         <id>https://docs.sill.social/blog/sill-beta-update-3/</id>
         <link href="https://docs.sill.social/blog/sill-beta-update-3/"/>
-        <updated>2025-01-06T00:00:00.000Z</updated>
+        <updated>2025-01-09T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[It's 2025, and Sill is moving closer and closer to 1.0! This is the last major release before 1.0. I'm excited to release a slew of new features today: custom notifications, trending, and an official documentation site!]]></summary>
         <content type="html"><![CDATA[<p>It's 2025, and Sill is moving closer and closer to 1.0! This is the last major release before 1.0. I'm excited to release a slew of new features today: custom notifications, trending, and an official documentation site!</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New features<a href="https://docs.sill.social/blog/sill-beta-update-3/#new-features" class="hash-link" aria-label="Direct link to New features" title="Direct link to New features">​</a></h2>

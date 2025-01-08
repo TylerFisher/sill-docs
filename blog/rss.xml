@@ -4,7 +4,7 @@
         <title>Sill Blog</title>
         <link>https://docs.sill.social/blog/</link>
         <description>Sill Blog</description>
-        <lastBuildDate>Mon, 06 Jan 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 09 Jan 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Sill Beta Update #3: Notifications, Trending, Docs]]></title>
             <link>https://docs.sill.social/blog/sill-beta-update-3/</link>
             <guid>https://docs.sill.social/blog/sill-beta-update-3/</guid>
-            <pubDate>Mon, 06 Jan 2025 00:00:00 GMT</pubDate>
+            <pubDate>Thu, 09 Jan 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[It's 2025, and Sill is moving closer and closer to 1.0! This is the last major release before 1.0. I'm excited to release a slew of new features today: custom notifications, trending, and an official documentation site!]]></description>
             <content:encoded><![CDATA[<p>It's 2025, and Sill is moving closer and closer to 1.0! This is the last major release before 1.0. I'm excited to release a slew of new features today: custom notifications, trending, and an official documentation site!</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="new-features">New features<a href="https://docs.sill.social/blog/sill-beta-update-3/#new-features" class="hash-link" aria-label="Direct link to New features" title="Direct link to New features">​</a></h2>
