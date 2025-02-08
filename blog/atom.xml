@@ -2,11 +2,38 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.sill.social/blog/</id>
     <title>Sill Blog</title>
-    <updated>2025-01-09T00:00:00.000Z</updated>
+    <updated>2025-02-08T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.sill.social/blog/"/>
     <subtitle>Sill Blog</subtitle>
     <icon>https://docs.sill.social/img/favicon-32x32.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Sill is back!]]></title>
+        <id>https://docs.sill.social/blog/sill-is-back/</id>
+        <link href="https://docs.sill.social/blog/sill-is-back/"/>
+        <updated>2025-02-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to get your Sill account running again]]></summary>
+        <content type="html"><![CDATA[<p>Learn how to get your Sill account running again</p>
+<p>Hello everyone,</p>
+<p>First, I want to apologize for the extended downtime Sill experienced this week. The hardware underpinning Sill's infrastructure failed, and I had to move Sill to a new host and set up a new technical plan for the service. The hardware failure was out of my control. <strong>Please be reassured that your data has not been leaked or exposed</strong>.</p>
+<p>However, due to the hardware failure, I was unable to recover Sill's database. That means <strong>you will need to recreate your Sill account</strong> if you want to continue using the service.</p>
+<p><strong>You can sign up for a new account <a href="https://sill.social/accounts/signup" target="_blank" rel="noopener noreferrer">here</a></strong>. Once you sign up, you will also need to reconnect your Bluesky and Mastodon accounts and, if applicable, resubscribe to your Daily Digest and custom notifications. I am very sorry for the inconvenience.</p>
+<p>Obviously, this is quite unfortunate. I spent most of this week doing everything I could to recover the database, but all of my attempts failed. Hardware failure is always a possibility when building software. The best we can do is have fallbacks for if it does happen. My backup plans did not work out in this case, but I've learned what went wrong and addressed the issues, and strengthened Sill's infrastructure considerably. On the new infrastructure I have done the following to prevent failure like this again:</p>
+<ul>
+<li><strong>Migrated Sill to a new hosting service</strong>. The hardware failure was out of my control, but I do control where Sill is hosted. After much research, I'm confident that I have chosen a more dependable hosting service going forward.</li>
+<li><strong>Implemented disk mirroring on Sill's production database</strong>. If one hard drive running Sill's database fails, Sill will automatically fail over to the backup hard drive with little to no disruption in service. Then, I can work to replace the failed hard drive and restore disk mirroring. My hosting service is also monitoring my server 24/7 and will address any failures if they happen.</li>
+<li><strong>Addressed the flaws in my offsite backup strategy</strong>. If Sill's infrastructure were to fail completely again, I am now confident I can restore Sill via my offsite backups on a new server in a timely manner.</li>
+<li><strong>Significatly reduced the amount of data Sill stores in its database at any time</strong>. This means I can backup more efficiently and more often, and the restoration process is much faster and simpler.</li>
+</ul>
+<p>In light of all this, I am postponing any plans to charge for features in Sill. I remain excited about the possibilities for Sill, and while this is a setback, I'm still committed to making this the best product it can be.</p>
+<p>As always, you can reach me at <a href="mailto:tyler@sill.social" target="_blank" rel="noopener noreferrer">tyler@sill.social</a> if you have any questions or concerns.</p>
+<p>Thank you for your understanding,
+Tyler</p>]]></content>
+        <author>
+            <name>Tyler Fisher</name>
+            <uri>https://tylerjfisher.com</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Sill Beta Update #3: Notifications, Trending, Docs]]></title>
         <id>https://docs.sill.social/blog/sill-beta-update-3/</id>
