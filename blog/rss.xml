@@ -4,10 +4,31 @@
         <title>Sill Blog</title>
         <link>https://docs.sill.social/blog/</link>
         <description>Sill Blog</description>
-        <lastBuildDate>Sat, 08 Feb 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Mar 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Introducing bookmarks]]></title>
+            <link>https://docs.sill.social/blog/introducing-bookmarks/</link>
+            <guid>https://docs.sill.social/blog/introducing-bookmarks/</guid>
+            <pubDate>Mon, 24 Mar 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Now you can save important links from your network to access later. Also, you can now access your daily digest archives.]]></description>
+            <content:encoded><![CDATA[<p>Now you can save important links from your network to access later. Also, you can now access your daily digest archives.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="bookmarks">Bookmarks<a href="https://docs.sill.social/blog/introducing-bookmarks/#bookmarks" class="hash-link" aria-label="Direct link to Bookmarks" title="Direct link to Bookmarks">​</a></h2>
+<p>Bookmarks are easy to use. Every link in Sill has a bookmark icon in its toolbar. Click this icon to save the link to your bookmarks. You can access your bookmarks through the navigation menu or by visiting <a href="https://sill.social/bookmarks" target="_blank" rel="noopener noreferrer">sill.social/bookmarks</a>.</p>
+<p><img decoding="async" loading="lazy" alt="A Sill link card with the bookmarks icon on the toolbar highlighted and pointed to with an arrow" src="https://docs.sill.social/assets/images/bookmarks-toolbar-a5ed8a295189cd5b6396982c32b1c696.png" width="1060" height="1026" class="img_ev3q"></p>
+<p>When you bookmark a link in Sill, Sill will continue to watch for new posts sharing that link, even beyond the standard 24-hour window. This makes bookmarks a great way to track conversation about a particular link over time. For example, I'll be using bookmarks to track shares to <a href="https://sill.social/" target="_blank" rel="noopener noreferrer">sill.social</a>, so I can see what my network is saying about Sill.</p>
+<p>On the bookmarks page, bookmarks are listed in reverse chronological order based on the time that you bookmarked the link. You can also search your bookmarks. Searches operate on the URL of the link, as well as the link text and link description.</p>
+<p><img decoding="async" loading="lazy" alt="A screenshot of the bookmarks page, showing a Sill link card for a story under the date header &amp;quot;March 26, 2025&amp;quot;" src="https://docs.sill.social/assets/images/bookmarks-page-3e67ed358640cad3797490b3677d5840.png" width="2686" height="1780" class="img_ev3q"></p>
+<p>Bookmarks are currently free, along with the rest of Sill. When paid plans for Sill launch, bookmarks will be a paid feature. I am currently targeting a summer launch for subscriptions.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="daily-digest-archives">Daily Digest archives<a href="https://docs.sill.social/blog/introducing-bookmarks/#daily-digest-archives" class="hash-link" aria-label="Direct link to Daily Digest archives" title="Direct link to Daily Digest archives">​</a></h2>
+<p>You can now view past editions of your Daily Digest by going to <a href="https://sill.social/digest/archive" target="_blank" rel="noopener noreferrer">sill.social/digest/archive</a>. Click on the date you want to view to go to the web version of your digest, complete with the archived link and post data. You can also reach your archive by clicking "Daily Digest" in the navigation.</p>
+<p>Don't have a Daily Digest? Head to <a href="https://sill.social/digest/settings" target="_blank" rel="noopener noreferrer">sill.social/digest/settings</a> to set yours up. You can receive a daily email or RSS item at the time of your choosing with the top 10 links from your social networks.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="help-spread-the-word">Help spread the word<a href="https://docs.sill.social/blog/introducing-bookmarks/#help-spread-the-word" class="hash-link" aria-label="Direct link to Help spread the word" title="Direct link to Help spread the word">​</a></h2>
+<p>I plan to launch subscriptions this summer. Until then, I'm focusing on platform stability and adding better information management tools to help you get the most out of your social networks.</p>
+<p>I'm also looking to grow Sill's user base. If you enjoy using Sill, please help spread the word on Bluesky and Mastodon. Word of mouth is the best way for Sill to grow.</p>]]></content:encoded>
+        </item>
         <item>
             <title><![CDATA[Sill is back!]]></title>
             <link>https://docs.sill.social/blog/sill-is-back/</link>
